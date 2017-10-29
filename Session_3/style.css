@@ -1,0 +1,18 @@
+body{
+	background: #DDD;
+	/*width: 100%*/
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	display: table-cell;
+	border: 1px dashed red;
+	padding: 2em;
+	width: 27%;	
+    padding-top: 71px;
+    padding-bottom: 60px;
+    padding-right: 46px;
+    float: left;
+
+}

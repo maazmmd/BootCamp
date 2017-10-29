@@ -1,0 +1,30 @@
+body{
+	width: 600px;
+	margin: auto;
+}
+
+img{
+	float: left;
+	margin-left: 30px;
+}
+
+.contentFragemt{
+	float: right;
+	background: red;
+	width: 250px;
+}
+
+.listAttr{
+	list-style: none;
+	font-style: italic;
+	margin-left: 310px;
+}
+
+.listAttr li{
+	display: inline;
+}
+
+.listAttr li a:hover{
+	color: black;
+	background-color: yellow;
+}
