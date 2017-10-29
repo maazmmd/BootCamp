@@ -1,0 +1,33 @@
+HTML CSS2 - Day 15
+Floats & Simple Layouts
+
+float : left
+overflow : hidden 
+min-width : 600px
+
+margin : auto; // For Left and right width to be same (Alignment in Centre)
+list-style : none; //For <ul> Tag (No Bullet Points)
+
+li{
+	display : inline; //For Menu
+	padding: 10px;
+}	
+
+text-decoration : none;
+font--familt: san-serif;
+
+
+<aside> Tag
+
+Day 16 - Menu in Website
+
+a:hover{
+	text-decoration: underline;
+	color: black;
+}
+
+Day 18 Image Replacement
+
+h1{
+	background: url{../img/logo.jpg} no-repeat;
+}
