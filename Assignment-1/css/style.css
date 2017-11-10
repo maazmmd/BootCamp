@@ -1,0 +1,134 @@
+.listAttr {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: brown;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
+}
+
+nav, .cellAttr {
+    float: left;
+}
+
+nav ul a, .cellAttr a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover, .cellAttr a:hover {
+    background-color: black;
+}
+
+.tail {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Tangerine', serif;
+    font-size: 18px;
+    background: url('../images/wooden.jpg');
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    margin: 50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.title{
+    margin-top: 75px;
+}
+
+header, footer {
+    margin-top: 48px;
+    padding: 1em;
+    color: white;
+    background-color: purple;
+    clear: left;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d34615;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 91px 0px 0px 0px
+}
+
+header#mainTag{
+    background-color: orange;
+}
+
+#mainSection {
+    display: table;
+}
+
+#left {
+    float: left;
+    width: 350px;
+    margin: 50px 75px;
+}
+
+#right {
+    float: right;
+    width: 724px;
+}
+
+#section2 {
+    display: table;
+}
+
+#left2 {
+    float: left;
+    width: 700px;
+    padding: 1em;
+}
+
+#right2 {
+    float: right;
+    width: 350px;
+    margin: 75px 75px;
+}
+
+#imageList {
+    font-size: 0;
+    width: 50%;
+    /*margin: 0 auto;*/
+
+}
+
+#imageList a{
+    margin: 2px;
+    border: 4px soild transparent;
+    display: table;
+}
+
+#imageList a:hover {
+    border-color: white;
+    opacity: 0.7;
+}
