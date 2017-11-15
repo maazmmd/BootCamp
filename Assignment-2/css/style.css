@@ -1,0 +1,23 @@
+body {
+    font-family: 'Tangerine', serif;
+    font-size: 18px;
+}
+
+#head, #foot {
+   background-color: #ed9c28;
+    text-align: center;
+}
+#head {
+    margin: 0;
+}
+#ref{
+    margin: 5px 5px;
+}
+
+@media (max-width: 768px) {
+
+#imageList a img, .col-sm-4 img{
+    width: 100%;
+}
+
+}

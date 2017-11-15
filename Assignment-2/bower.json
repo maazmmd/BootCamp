@@ -1,0 +1,13 @@
+{
+  "name": "bootstrap-app",
+  "version": "1.0",
+  "authors": [
+    "Mohammed Maaz <maazmmd@gmail.com>"
+  ],
+  "description": "getting started with bower",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+     "bootstrap": "~3.1"
+  }
+}
