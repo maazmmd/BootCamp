@@ -1,23 +1,29 @@
-body {
-    font-family: 'Tangerine', serif;
-    font-size: 18px;
-}
+/**
+ 	Global Declarations
+ **/
+ body {
+ 	font-family: 'Tangerine', serif;
+ 	font-size: 18px;
+ }
 
-#head, #foot {
-   background-color: #ed9c28;
-    text-align: center;
-}
-#head {
-    margin: 0;
-}
-#ref{
-    margin: 5px 5px;
-}
+ #head, #foot {
+ 	background-color: #ed9c28;
+ 	text-align: center;
+ }
+ #head {
+ 	margin-top: 50px;
+ }
+ #ref{
+ 	margin: 5px 5px;
+ }
 
+/**
+	Responsive Media Query
+**/
 @media (max-width: 768px) {
 
-#imageList a img, .col-sm-4 img{
-    width: 100%;
-}
+	#imageList a img, .col-sm-4 img{
+		width: 100%;
+	}
 
 }
