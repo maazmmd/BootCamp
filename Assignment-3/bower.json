@@ -1,0 +1,13 @@
+{
+  "name": "Calculator-app",
+  "version": "1.0",
+  "authors": [
+    "Mohammed Maaz <maazmmd@gmail.com>"
+  ],
+  "description": "getting started with Calci using Javascript",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+     "bootstrap": "~3.1"
+  }
+}
