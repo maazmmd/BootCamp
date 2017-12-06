@@ -1,37 +1,35 @@
 function myFunction() {
-  var input, filter, index;
+  var input, filter, index, i , j;
   input = document.getElementById("myInput");
   if (input.value) {
     filter = input.value.toUpperCase();
-    //tr = document.getElementsByTagName("tr"); 
-    if (filter.includes('MON')) {
-      index = 1;
-    } else if (filter.includes('TUE')) {
-      index = 2;
-    } else if (filter.includes('WED')) {
-      index = 3;
-    } else if (filter.includes('THU')) {
-      index = 4;
-    } else if (filter.includes('FRI')) {
-      index = 5;
-    }  else if (filter.includes('SAT')) {
-      index = 6;
+    var tr = document.getElementsByTagName("tr"); 
+    for (i = 0; i < tr.length; i++) {
+      if(i == 0){
+        continue;
+      }
+      var row = document.getElementsByTagName("tr")[i];
+      var day = row.getElementsByTagName("th")[0].innerHTML.toUpperCase();
+      if (filter.includes(day)) {
+        index = i;
+        break;
+      }
     }
-    //th = document.getElementsByTagName("th");
-    var row = document.getElementsByTagName("tr")[index];
-    if (filter.includes('BANGALORE')) {
-      document.getElementById('result').innerHTML = 'Tempearture in Bangalore is <b>' +  row.getElementsByTagName("td")[0].innerHTML + ' </b>Degree Celcius Today ';
-    } else if (filter.includes('CHENNAI')) {
-      document.getElementById('result').innerHTML = 'Tempearture in Chennai is <b>' +  row.getElementsByTagName("td")[1].innerHTML + ' </b>Degree Celcius Today ';
-    } else if (filter.includes('DELHI')) {
-      document.getElementById('result').innerHTML = 'Tempearture in Delhi is <b>' + row.getElementsByTagName("td")[2].innerHTML + ' </b>Degree Celcius Today ';
-    } else if (filter.includes('HYDERABAD')) {
-      document.getElementById('result').innerHTML = 'Tempearture in Hyderabad is <b>' + row.getElementsByTagName("td")[3].innerHTML + ' </b>Degree Celcius Today ';
-    } else if (filter.includes('KOLKATA')) {
-      document.getElementById('result').innerHTML = 'Tempearture in Kolkata is <b>' +  row.getElementsByTagName("td")[4].innerHTML + ' </b>Degree Celcius Today ';
-    } else {
-      document.getElementById('result').innerHTML = 'Search with Relevant Details';
-    }
+    var th = document.getElementsByTagName("th"); 
+    for (j = 0; j < th.length; j++) {
+      if(j == 0){
+        continue;
+      }
+      var city = th[j].innerHTML.toUpperCase();
+      var row = document.getElementsByTagName("tr")[index];
+      if (filter.includes(city)) {
+        document.getElementById('result').innerHTML = 'Tempearture in ' + th[j].innerHTML + ' is <b>' +  row.getElementsByTagName("td")[j-1].innerHTML + ' </b>Degree Celcius Today ';
+        break;
+      }
+      // else {
+      //   document.getElementById('result').innerHTML = 'Search with Relevant Details';
+      // }
+    } 
   } else {
     document.getElementById('result').innerHTML = '';
   }
