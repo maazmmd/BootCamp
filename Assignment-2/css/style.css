@@ -17,10 +17,31 @@
  	margin: 5px 5px;
  }
 
+ #alignImage{
+ 	text-align: center;
+ 	margin-top: 60px;
+ }
+
 /**
 	Responsive Media Query
 **/
 @media (max-width: 768px) {
+
+	#imageList a img, .col-sm-4 img{
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 1028px) {
+
+	#imageList a img, .col-sm-4 img{
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 1400px) {
 
 	#imageList a img, .col-sm-4 img{
 		width: 100%;
