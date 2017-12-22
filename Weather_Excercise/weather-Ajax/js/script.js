@@ -14,8 +14,7 @@ function fetchCurrentWeather() {
 }
 
 function alertContents() {
-    if (httpRequest.readyState === XMLHttpRequest.DONE) {
-        if (httpRequest.status === 200) {
+    if (httpRequest.readyState === XMLHttpRequest.DONE || httpRequest.status === 200) {
             var response = httpRequest.responseText;
             var responseObj = JSON.parse(response);
              var weatherBot = document.getElementById("weatherBot");
@@ -23,7 +22,6 @@ function alertContents() {
              for (var i = rowCount - 1; i > 0; i--) {
                  weatherBot.deleteRow(i);
              }
-            
             
             // Create an empty <tr> element and add it to the 1st position of the table:
             var tbody = document.getElementById("tableBody");
@@ -46,13 +44,11 @@ function alertContents() {
             cell5.innerHTML = responseObj.weather[0].main;
             cell6.innerHTML = responseObj.weather[0].description;
             cell7.innerHTML = responseObj.coord.lon + " " + responseObj.coord.lat;
-            alert(responseObj);
-        } else {
-            // There was a problem with the request.
-            // For example, the response may have a 404 (Not Found)
-            // or 500 (Internal Server Error) response code.
-        }
+            //alert(responseObj);
     } else {
-        // Not ready yet.
+        // There was a problem with the request.
+        // For example, the response may have a 404 (Not Found)
+        // or 500 (Internal Server Error) response code.
+         // Not ready yet.
     }
 }
